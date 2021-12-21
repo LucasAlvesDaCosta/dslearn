@@ -1,7 +1,6 @@
 package com.devsuperior.dslearnbds.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,7 +14,7 @@ public class DeliverService {
 	@Autowired
 	private DeliverRepository repository;
 	
-	@PreAuthorize("hasAnyRole('ADMIN','INSTRUCTOR')")
+	//@PreAuthorize("hasAnyRole('ADMIN','INSTRUCTOR')")
 	@Transactional //Do not readyOnly
 	public void saveRevision(Long id, DeliverRevisionDTO dto) {
 		Deliver deliver = repository.getOne(id);

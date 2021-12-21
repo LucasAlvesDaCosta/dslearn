@@ -2,14 +2,14 @@ package com.devsuperior.dslearnbds.resources.exceptions;
 
 import java.io.Serializable;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class OAuthCustomError implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	private String error;
 	
-	@JsonIgnoreProperties(value = "error_description")
+	@JsonProperty(value = "error_description")
 	private String errorDescription;
 	
 	

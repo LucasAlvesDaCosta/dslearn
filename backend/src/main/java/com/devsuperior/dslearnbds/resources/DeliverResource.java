@@ -19,7 +19,8 @@ public class DeliverResource {
 	@Autowired
 	private DeliverService service;
 	
-	@PreAuthorize("hasAnyRole('ADMIN')")
+	// authentication by method
+	@PreAuthorize("hasAnyRole('ADMIN','INSTRUCTOR')")
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<Void> saveRevision(@PathVariable Long id, @RequestBody DeliverRevisionDTO dto) {
 		service.saveRevision(id, dto);
