@@ -1,4 +1,5 @@
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/LucasAlvesDaCosta/dslearn/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/LucasAlvesDaCosta/dslearn/blob/main/LICENSE) _ *Desenvolvido e licenciado por Lucas Alves da Costa*
+
 # DSLearn
 * by: *Lucas Alves da Costa*
 ## Visão geral do sistema
