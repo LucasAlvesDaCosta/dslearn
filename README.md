@@ -1,5 +1,7 @@
-
-## Visão geral do sistema DSLearn
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/LucasAlvesDaCosta/dslearn/blob/main/LICENSE) 
+# DSLearn
+* by: *Lucas Alves da Costa*
+## Visão geral do sistema
 O sistema consiste em uma plataforma de ensino que mantém informações de cursos, suas turmas e alunos, bem como um fórum para perguntas e respostas sobre os conteúdos do curso. Os atores do sistema podem ser alunos e professores. Há também usuários administradores, que são os únicos autorizados a cadastrar cursos e turmas.
 
 Um curso é composto de vários “recursos”, que são grupos de conteúdos. Estes recursos podem ser trilhas de aprendizado, bônus, links externos, e o próprio fórum de perguntas e respostas do curso. Cada recurso pode conter seções, e estas seções por sua vez é que vão conter as aulas, que podem ser conteúdos em vídeo e/ou texto, ou tarefas para serem entregues pelos alunos.
@@ -19,7 +21,7 @@ Com relação ao fórum de perguntas e respostas, este consiste em uma coleção
 * Marcar/desmarcar upvote em pergunta (não pode ser o autor)
 * Marcar/desmarcar upvote em resposta (não pode ser o autor)
 * Marcar/desmarcar melhor resposta (somente autor do tópico e instrutor)  
-### Implementação:
+### Implementação backend:
     
   * Domínio e ORM
       - Implementação de um modelo de domínio complexo (projeto DSLearn)
@@ -30,7 +32,25 @@ Com relação ao fórum de perguntas e respostas, este consiste em uma coleção
     - Refresh token
     - Pré-autorização de métodos
     - JPA e JPQL
+  * Tecnologias utilizadas
+    - Java
+    - Spring Boot
+    - Maven
+    - JPA Hibernate.
+    - Eclipse STS
+    - Postman
+    - Postgree
+    - JWT
+    - OAuth2
+    - Bean validation
+  * Diferenciais
+    - Consultas com JPQL
+    - Projeto em camadas
+    - Ambientes de teste e desenvolvimento
+    - Apto para ambiente de produção
 
 ### Modelo Relacional
    ![model](https://raw.githubusercontent.com/LucasAlvesDaCosta/imagens/main/modelo-conceitual-com-forum.png)
   
+## Frontend - FrontWeb
+  * Será desenvolvido utilizando a tecnologia ReactJS e recusrsos do Bootstrap
